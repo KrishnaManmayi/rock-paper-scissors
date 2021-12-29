@@ -1,0 +1,50 @@
+.pickContainer {
+  background-image: url(../assets/img/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "col1 col2"
+    "col3 col3";
+  gap: 5rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.gridItem {
+  background-color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.gridItem1Wrap {
+  grid-area: col1;
+  padding: 1.3rem;
+  background: linear-gradient(
+    to bottom,
+    hsl(230, 89%, 65%),
+    hsl(230, 89%, 62%)
+  );
+  border-radius: 50%;
+}
+.gridItem2Wrap {
+  grid-area: col2;
+  padding: 1.3rem;
+  background: linear-gradient(to bottom, hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+  border-radius: 50%;
+}
+.gridItem3Wrap {
+  grid-area: col3;
+  padding: 1.3rem;
+  background: linear-gradient(
+    to bottom,
+    hsl(349, 70%, 56%),
+    hsl(349, 71%, 52%)
+  );
+  border-radius: 50%;
+}
