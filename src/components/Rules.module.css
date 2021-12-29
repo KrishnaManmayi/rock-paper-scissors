@@ -1,0 +1,11 @@
+.rulesButton {
+  padding: 8px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-left: 90%;
+  cursor: pointer;
+}
