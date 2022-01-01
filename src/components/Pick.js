@@ -1,27 +1,22 @@
 import React from "react";
 import styles from "./Pick.module.css";
-import paperIcon from "../assets/img/icon-paper.svg";
-import scissorsIcon from "../assets/img/icon-scissors.svg";
 import rockIcon from "../assets/img/icon-rock.svg";
+import PaperIcon from "./UI/PaperIcon";
+import ScissorsIcon from "./UI/ScissorsIcon";
+import RockIcon from "./UI/RockIcon";
 
 const Pick = () => {
   return (
     <div class="mainContainer">
       <div className={styles.pickContainer}>
         <div className={styles.gridItem1Wrap}>
-          <div className={styles.gridItem1 + " " + styles.gridItem}>
-            <img src={paperIcon} alt="Paper" />
-          </div>
+          <PaperIcon />
         </div>
         <div className={styles.gridItem2Wrap}>
-          <div className={styles.gridItem2 + " " + styles.gridItem}>
-            <img src={scissorsIcon} alt="Scissors" />
-          </div>
+          <ScissorsIcon />
         </div>
         <div className={styles.gridItem3Wrap}>
-          <div className={styles.gridItem3 + " " + styles.gridItem}>
-            <img src={rockIcon} alt="Rock" />
-          </div>
+          <RockIcon />
         </div>
       </div>
     </div>

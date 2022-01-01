@@ -1,13 +1,22 @@
 import React from "react";
 import Header from "./components/Header";
 import Pick from "./components/Pick";
+import HousePicked from "./components/HousePicked";
 import Rules from "./components/Rules";
+
+import { Routes, Route, Navigate } from "react-router-dom";
+import YouPicked from "./components/YouPicked";
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Pick />
+      <Routes>
+        <Route path="/" element={<Pick />} />
+        <Route path="/youpicked" element={<YouPicked />} />
+        <Route path="/housepicked" element={<HousePicked />} />
+        <Route path="*" element={<Navigate replace to="/" />} />
+      </Routes>
       <Rules />
     </div>
   );
