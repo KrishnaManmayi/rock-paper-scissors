@@ -11,7 +11,7 @@ const Result = () => {
       <p></p>
       <p>THE HOUSE PICKED</p>
       <div className={styles.icon}>
-        <PaperIcon />
+        <PaperIcon success="false" />
       </div>
       <div className={styles.resultBox}>
         <p>YOU WIN</p>

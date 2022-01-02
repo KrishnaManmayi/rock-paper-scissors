@@ -2,11 +2,16 @@ import React from "react";
 import scissorsIcon from "../../assets/img/icon-scissors.svg";
 import styles from "./Icons.module.css";
 
-const ScissorsIcon = () => {
+import SuccessBorder from "./SuccessBorder";
+
+const ScissorsIcon = (props) => {
   return (
-    <div className={styles.scissorsIconWrap}>
-      <div className={styles.iconMain}>
-        <img src={scissorsIcon} alt="Scissors" />
+    <div className={styles.mainBox}>
+      {props.success === "true" && <SuccessBorder />}
+      <div className={styles.scissorsIconWrap}>
+        <div className={styles.iconMain}>
+          <img src={scissorsIcon} alt="Scissors" />
+        </div>
       </div>
     </div>
   );
