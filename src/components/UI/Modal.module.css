@@ -2,24 +2,25 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 10;
 }
 .modal {
   position: fixed;
   top: 20%;
-  left: 35%;
-  width: 30%;
+  left: 30%;
+  width: 40%;
   padding: 1rem;
   z-index: 100;
   background-color: white;
   border-radius: 10px;
+  overflow: scroll;
 }
 .rulesImg {
   width: fit-content;
-  margin: 1.2rem auto;
+  margin: 0 auto;
 }
 .header {
   display: flex;
@@ -29,4 +30,26 @@
 }
 .header img {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 70%;
+    left: 15%;
+  }
+}
+@media (max-width: 576px) {
+  .modal {
+    width: 98%;
+    left: 1%;
+  }
+}
+@media (max-width: 375px) {
+  .modal {
+    width: 100%;
+    left: 0%;
+  }
+  .rulesImg {
+    margin: 0.2rem auto;
+  }
 }

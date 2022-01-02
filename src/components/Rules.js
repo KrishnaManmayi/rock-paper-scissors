@@ -15,7 +15,7 @@ const Rules = () => {
   };
 
   return (
-    <div>
+    <div className={styles.rulesContainer}>
       {showRules && <Modal closeModal={closeRulesModal} />}
       <button className={styles.rulesButton} onClick={showRulesHandler}>
         RULES

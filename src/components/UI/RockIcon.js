@@ -7,7 +7,7 @@ import SuccessBorder from "./SuccessBorder";
 const RockIcon = (props) => {
   return (
     <div className={styles.mainBox}>
-      {props.success === "true" && <SuccessBorder />}
+      {props.success && <SuccessBorder />}
       <div className={styles.rockIconWrap}>
         <div className={styles.iconMain}>
           <img src={rockIcon} alt="Rock" />

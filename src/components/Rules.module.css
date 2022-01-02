@@ -9,3 +9,19 @@
   margin-left: 80%;
   cursor: pointer;
 }
+.rulesContainer {
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 576px) {
+  .rulesButton {
+    width: fit-content;
+    margin: auto;
+  }
+
+  .rulesContainer {
+    width: fit-content;
+    margin: 2rem auto;
+  }
+}

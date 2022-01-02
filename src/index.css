@@ -21,3 +21,11 @@ body {
   margin: 1rem auto;
   margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+  .mainContainer {
+    width: 80%;
+    margin: 1rem auto;
+    margin-bottom: 0;
+  }
+}

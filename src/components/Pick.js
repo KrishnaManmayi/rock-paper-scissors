@@ -1,21 +1,29 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Pick.module.css";
-import rockIcon from "../assets/img/icon-rock.svg";
+
 import PaperIcon from "./UI/PaperIcon";
 import ScissorsIcon from "./UI/ScissorsIcon";
 import RockIcon from "./UI/RockIcon";
 
 const Pick = () => {
+  let navigate = useNavigate();
   return (
-    <div class="mainContainer">
+    <div className="mainContainer">
       <div className={styles.pickContainer}>
-        <div className={styles.gridItem1Wrap}>
+        <div
+          className={styles.gridItem1Wrap}
+          onClick={() => navigate("/youpicked/PAPER")}>
           <PaperIcon />
         </div>
-        <div className={styles.gridItem2Wrap}>
+        <div
+          className={styles.gridItem2Wrap}
+          onClick={() => navigate("/youpicked/SCISSORS")}>
           <ScissorsIcon />
         </div>
-        <div className={styles.gridItem3Wrap}>
+        <div
+          className={styles.gridItem3Wrap}
+          onClick={() => navigate("/youpicked/ROCK")}>
           <RockIcon />
         </div>
       </div>

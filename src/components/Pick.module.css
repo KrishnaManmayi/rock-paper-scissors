@@ -23,3 +23,8 @@
 .gridItem3Wrap {
   grid-area: col3;
 }
+@media (max-width: 576px) {
+  .pickContainer {
+    transform: scale(0.8);
+  }
+}

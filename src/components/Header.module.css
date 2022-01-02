@@ -31,3 +31,12 @@
   font-size: 3.5rem;
   font-weight: 700;
 }
+
+@media (max-width: 576px) {
+  .title {
+    transform: scale(0.8);
+  }
+  .scoreContainer {
+    transform: scale(0.8);
+  }
+}

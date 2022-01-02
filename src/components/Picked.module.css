@@ -23,3 +23,33 @@
   margin: 1rem auto;
   margin-bottom: 0;
 }
+
+.blankIcon {
+  animation: blink 1s cubic-bezier(0.1, 0.71, 0.94, 0.15) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+
+@media (max-width: 576px) {
+  .header,
+  .main {
+    transform: scale(0.7);
+    gap: 7rem;
+    padding: 1rem;
+  }
+  .icon {
+    transform: scale(1.1);
+  }
+}

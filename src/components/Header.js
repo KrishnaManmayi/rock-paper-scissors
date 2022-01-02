@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ScoreContext } from "../store/ScoreProvider";
 import styles from "./Header.module.css";
 
 const Header = () => {
+  const { score } = useContext(ScoreContext);
   return (
-    <div class="mainContainer">
+    <div className="mainContainer">
       <div className={styles.headerContainer}>
         <div className={styles.title}>
           <h1>ROCK</h1>
@@ -12,7 +14,7 @@ const Header = () => {
         </div>
         <div className={styles.scoreContainer}>
           <p id={styles.scoreTitle}>SCORE</p>
-          <p id={styles.scoreVal}>12</p>
+          <p id={styles.scoreVal}>{score}</p>
         </div>
       </div>
     </div>
