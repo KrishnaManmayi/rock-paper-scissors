@@ -20,7 +20,7 @@
 }
 .rulesImg {
   width: fit-content;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 .header {
   display: flex;
@@ -40,8 +40,8 @@
 }
 @media (max-width: 576px) {
   .modal {
-    width: 98%;
-    left: 1%;
+    width: 90%;
+    left: 5%;
   }
 }
 @media (max-width: 375px) {
